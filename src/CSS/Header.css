@@ -1,11 +1,14 @@
 .header {
   color: white;
   display: flex;
-  background-color: black;
+  /* background-color: black; */
   padding: 20px;
   align-items: center;
   justify-content: space-between;
   overflow-x: scroll;
+}
+.header::-webkit-scrollbar{
+    display:none;
 }
 
 .header > img {
@@ -24,10 +27,12 @@
 
 .header_icon:hover > p {
   display: inline;
+  font-family: cursive;
 }
 
 .header_icon > p {
-  color: red;
+
+  color: white;
   display: none;
   font-family: cursive;
   text-transform: capitalize;
