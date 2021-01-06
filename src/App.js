@@ -1,19 +1,16 @@
+import "./App.css";
+import { Header } from "./Components/Header";
+import { Navigation } from "./Components/Navigation";
+import { Results } from "./Components/Results";
 
-import './App.css';
-import { Header } from './Components/Header';
-import { Navigation } from './Components/Navigation';
-
-const  App = () =>  {
+const App = () => {
   return (
     <div className="app">
-     
-      {/*Header */}
-      <Header/>
-      <Navigation/>
-      {/*Navigation */}
-       {/*Results */}
+      <Header />
+      <Navigation />
+      <Results />
     </div>
   );
-}
+};
 
 export default App;
