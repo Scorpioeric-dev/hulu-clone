@@ -1,20 +1,21 @@
 import React from 'react'
+import requests from './requests'
 import '../CSS/Navigation.css'
 
-export const Navigation = () => {
+export const Navigation = ({setSelectedOption}) => {
     return (
         <div className='nav'>
-        <h3>Trending</h3>
-        <h3>Top Rated</h3>
-        <h3>Action</h3>
-        <h3>Comedy</h3>
-        <h3>Horror</h3>
-        <h3>Romance</h3>
-        <h3>Mystery</h3> 
-        <h3>Sci-fi</h3>   
-        <h3>Western</h3>   
-        <h3>Animation</h3>   
-        <h3>Movie</h3>   
+        <h3 onClick={() => setSelectedOption(requests.fetchTrending)}>Trending</h3>
+        <h3 onClick={() => setSelectedOption(requests.fetchTopRated)}>Top Rated</h3>
+        <h3 onClick={() => setSelectedOption(requests.fetchTopRated)}>Action</h3>
+        <h3 onClick={() => setSelectedOption(requests.fetchTopRated)}>Comedy</h3>
+        <h3 onClick={() => setSelectedOption(requests.fetchTopRated)}>Horror</h3>
+        <h3 onClick={() => setSelectedOption(requests.fetchTopRated)}>Romance</h3>
+        <h3 onClick={() => setSelectedOption(requests.fetchTopRated)}>Mystery</h3> 
+        <h3 onClick={() => setSelectedOption(requests.fetchTopRated)}>Sci-fi</h3>   
+        <h3 onClick={() => setSelectedOption(requests.fetchTopRated)}>Western</h3>   
+        <h3 onClick={() => setSelectedOption(requests.fetchTopRated)}>Animation</h3>   
+        <h3 onClick={() => setSelectedOption(requests.fetchTopRated)}>Movie</h3>   
         </div>
     )
 }
