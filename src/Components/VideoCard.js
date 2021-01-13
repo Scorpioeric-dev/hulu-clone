@@ -1,13 +1,13 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "../CSS/VideoCard.css";
 import StarRate from "@material-ui/icons/StarRate";
 // import TextTruncate from 'react-text-truncate'
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
-export const VideoCard = ({ movie }) => {
+export const VideoCard = forwardRef(({ movie },ref) => {
   return (
-    <div className="videoCard">
+    <div ref={ref} className="videoCard">
       <img
         src={`${base_url}${movie.backdrop_path || movie.poster_path} `}
         alt=" movie poster"
@@ -22,4 +22,4 @@ export const VideoCard = ({ movie }) => {
       </p>
     </div>
   );
-};
+});
